@@ -6,5 +6,7 @@ before_script:
 
 build:
   script:
-    - ./toolchain/build_toolchain.sh
-    - ./trunk/build_firmware.sh
+    - cd toolchain
+    - ./build_toolchain.sh
+    - cd ../trunk
+    - ./build_firmware.sh
