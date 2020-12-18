@@ -1,6 +1,7 @@
 image: ubuntu:latest
 
 before_script:
+  - apt update
   - apt install git lib32z1 intltool autoconf automake autopoint bison build-essential flex gawk gettext gperf libtool pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev texinfo python-docutils -y
 
 build:
